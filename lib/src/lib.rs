@@ -111,6 +111,8 @@ pub mod str_util;
 pub mod submodule_store;
 #[cfg(feature = "testing")]
 pub mod test_signing_backend;
+#[cfg(feature = "tfvc")]
+pub mod tfvc_backend;
 pub mod time_util;
 pub mod trailer;
 pub mod transaction;
