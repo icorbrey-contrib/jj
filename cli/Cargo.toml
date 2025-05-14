@@ -113,10 +113,11 @@ testutils = { workspace = true }
 jj-cli = { path = ".", features = ["test-fakes"], default-features = false }
 
 [features]
-default = ["watchman", "git"]
+default = ["watchman", "git", "tfvc"]
 bench = ["dep:criterion"]
 git = ["jj-lib/git", "dep:gix"]
 test-fakes = ["jj-lib/testing"]
+tfvc = ["jj-lib/tfvc"]
 watchman = ["jj-lib/watchman"]
 
 [package.metadata.binstall]

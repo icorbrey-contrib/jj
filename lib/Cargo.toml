@@ -93,10 +93,11 @@ testutils = { workspace = true }
 tokio = { workspace = true, features = ["full"] }
 
 [features]
-default = ["git"]
+default = ["git", "tfvc"]
 git = ["dep:gix"]
 watchman = ["dep:tokio", "dep:watchman_client"]
 testing = ["git"]
+tfvc = []
 
 [lints]
 workspace = true
